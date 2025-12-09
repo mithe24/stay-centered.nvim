@@ -39,7 +39,7 @@ local function stay_centered(ctx)
 
 	if line ~= vim.b.last_line then
 		local column = vim.fn.getcurpos()[3]
-		vim.cmd("norm! zz")
+		vim.cmd("normal zz")
 		vim.b.last_line = line
 		if ctx.mode == mode.insert then
 			vim.fn.cursor({ line, column })
